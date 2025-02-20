@@ -6,6 +6,7 @@ import { Cheatsheet } from "../../Components/Cheatsheet/Cheatsheet";
 import { Themes } from "../../Components/Themes/Themes";
 import { ThemeSinglePage } from "../../Components/ThemeSinglePage/ThemeSinglePage";
 import { ErrorPage } from "../../Components/404/ErrorPage";
+import { Navigate } from "react-router-dom";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: "/themes/:id",
         element: <ThemeSinglePage />,
+      },
+      {
+        path: "/Shpora",
+        element: <Navigate to="/" />,
       },
       {
         path: "*",

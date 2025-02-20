@@ -13,7 +13,6 @@ export const ThemeSinglePage = () => {
 
   const { data: themes } = useGetAllMateryalQuery();
 
-  // Проверка наличия данных
   if (!themes) {
     return (
       <div>
