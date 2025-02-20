@@ -1,0 +1,71 @@
+/* NotFound.css */
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Занимает всю высоту экрана */
+    color: #ffffff;
+    text-align: center;
+}
+
+.error-code {
+    font-size: 10rem;
+    color: #ff4757;
+    animation: pulse 1s infinite;
+}
+
+.error-message {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: red;
+}
+
+.scp-message {
+    font-size: 1.2rem;
+    color: #00ff00;
+    margin: 10px 0;
+}
+
+.return-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4757;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.return-home:hover {
+    background-color: #c0392b;
+}
+
+.animation {
+    margin-top: 50px;
+    font-size: 5rem;
+}
+
+.scp-icon {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

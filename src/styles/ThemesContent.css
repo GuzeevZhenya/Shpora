@@ -1,0 +1,65 @@
+* {
+  margin: 0; /* Убираем встроенные отступы */
+  padding: 0; /* Убираем встроенные отступы */
+  box-sizing: border-box; /* Устанавливаем модель коробки */
+}
+
+body {
+  background-color: rgb(27, 27, 32); /* Фон всего приложения */
+  color: white; /* Цвет текста */
+}
+
+.app-container {
+  padding: 0;
+}
+
+.header {
+  width: 100%; /* Ширина шапки на всю ширину */
+  margin-bottom: 20px; /* Отступ снизу для шапки */
+}
+
+.themes-container {
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Шрифт для текста */
+}
+
+h1 {
+  font-size: 28px; /* Размер заголовка */
+  color: #333; /* Цвет заголовка */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.category-link {
+  display: inline-block; /* Выравнивание ссылок в строку */
+  margin: 5px 0; /* Отступы между ссылками */
+  padding: 10px 15px; /* Отступы внутри ссылки */
+  background-color: #007bff; /* Цвет фона ссылки */
+  color: white; /* Цвет текста ссылки */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 5px; /* Закругленные углы */
+  transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.category-link:hover {
+  background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+.category-link:active {
+  background-color: #004494; /* Цвет фона при нажатии */
+}
+
+.content-container {
+  display: flex; /* Используем Flexbox для размещения элементов */
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  gap: 20px; /* Отступ между текстом и картинкой */
+}
+
+.text-content {
+  flex: 1; /* Занимает оставшееся пространство */
+}
+
+.map-image {
+  max-width: 50%; /* Ширина картинки */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  border-radius: 10px; /* Закругленные углы */
+}

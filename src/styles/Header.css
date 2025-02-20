@@ -1,0 +1,53 @@
+/* Header.css */
+
+/* Общий стиль header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #282c34; /* Темно-синий фон */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Стиль для логотипа */
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Стиль для навигации */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Отступ между ссылками */
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  font-size: 16px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #61dafb; /* Голубой цвет React */
+}
+
+/* Активная ссылка */
+.navLink.active {
+  font-weight: bold;
+  color: #61dafb; /* Голубой цвет React */
+}
