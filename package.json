@@ -11,7 +11,7 @@
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^6.3.0",
-    "json-server": "^0.17.0",
+    "json-server": "^1.0.0-beta.3",
     "loader": "^2.1.1",
     "modul": "^0.0.1",
     "react": "^19.0.0",
