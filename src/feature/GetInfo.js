@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const infoAPI = createApi({
   reducerPath: "infoAPI",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:5000",
+    baseUrl: "https://shropa-server.onrender.com/api",
   }),
   tagTypes: ["Materials", "Hooks", "Cheatsheet", "Themes"],
   endpoints: (build) => ({

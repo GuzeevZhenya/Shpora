@@ -5,24 +5,35 @@ import "../../styles/ThemesContent.css";
 import { ThemeForm } from "../Form/ThemeForm/ThemeForm";
 import LoadingSpinner from "../Loading/Loading";
 import { useCreateThemeMutation } from "../../feature/GetInfo";
-import mainImage from "../../assets/main.jpeg"; // Укажите правильный путь
+import mainImage from "../../assets/main.jpeg";
+import ErrorIcon from "../ErrorIcon/ErrorIcon";
 
 export const Themes = () => {
-  const { data: themes, isLoading } = useGetAllMateryalQuery();
+  const { data: themes, isLoading, error } = useGetAllMateryalQuery();
   const [showForm, setShowForm] = useState(false);
   const [createTheme] = useCreateThemeMutation();
 
   const handleCreateTheme = async (theme) => {
     try {
-      await createTheme(theme).unwrap(); // Отправка данных на сервер
+      await createTheme(theme).unwrap();
       console.log("Тема успешно создана!");
     } catch (error) {
       console.error("Ошибка при создании темы:", error);
     }
   };
 
+  console.log(error);
+
   if (isLoading) {
     return <LoadingSpinner />;
+  }
+
+  if (error) {
+    return (
+      <div>
+        <ErrorIcon />
+      </div>
+    );
   }
 
   const toggleForm = () => setShowForm(!showForm);
