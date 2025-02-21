@@ -13,25 +13,24 @@ export const ItemList = ({
   updateFunction,
 }) => {
   const [showForm, setShowForm] = useState(false);
-  const [editingItem, setEditingItem] = useState(null); // Состояние для редактируемого элемента
+  const [editingItem, setEditingItem] = useState(null);
 
   const toggleForm = () => {
     setShowForm(!showForm);
     if (showForm) {
-      setEditingItem(null); // Сброс редактируемого элемента при закрытии формы
+      setEditingItem(null);
     }
   };
 
   const handleUpdate = (item) => {
-    setEditingItem(item); // Устанавливаем элемент для редактирования
-    setShowForm(true); // Открываем форму
+    setEditingItem(item);
+    setShowForm(true);
   };
 
   const handleRemove = (id) => {
     removeFunction(id);
   };
 
-  // Проверка наличия данных
   if (!items) {
     return (
       <div>
@@ -51,7 +50,7 @@ export const ItemList = ({
           createItem={editingItem ? updateFunction : itemMutationQuery}
           onClose={toggleForm}
           title={buttonName}
-          initialData={editingItem} // Передаём данные для редактирования
+          initialData={editingItem}
         />
       )}
       {items.length > 0 ? (
