@@ -1,0 +1,53 @@
+.theme-single-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.theme-single-page h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.theme-single-page button {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theme-single-page button:hover {
+  background-color: #0056b3;
+}
+
+.theme-single-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.theme-single-page li {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.theme-single-page h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.theme-single-page p {
+  margin: 10px 0;
+}
+
+.code-display {
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+}

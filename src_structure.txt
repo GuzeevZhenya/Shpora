@@ -1,0 +1,80 @@
+Структура папок тома Новый том
+Серийный номер тома: 000000ED B69C:EE82
+D:\REDEV\SHPORA\SRC
+|   App.css
+|   index.css
+|   index.js
+|   
++---api
++---app
+|   |   App.jsx
+|   |   
+|   \---store
+|           store.js
+|           
++---assets
+|       main.jpeg
+|       
++---common
+|   +---components
+|   |   +---Cheatsheet
+|   |   |       Cheatsheet.jsx
+|   |   |       
+|   |   +---CodeOutput
+|   |   |       CodeOutput.jsx
+|   |   |       
+|   |   +---ErrorIcon
+|   |   |       ErrorIcon.jsx
+|   |   |       
+|   |   +---Errors
+|   |   |       ErrorPage.jsx
+|   |   |       
+|   |   +---Form
+|   |   |   |   Form.jsx
+|   |   |   |   
+|   |   |   \---ThemeForm
+|   |   |           ThemeForm.jsx
+|   |   |           
+|   |   +---Header
+|   |   |       Header.jsx
+|   |   |       
+|   |   +---Hook
+|   |   |       Hook.jsx
+|   |   |       
+|   |   +---ItemList
+|   |   |   |   ItemList.jsx
+|   |   |   |   
+|   |   |   \---Item
+|   |   |           Item.jsx
+|   |   |           
+|   |   +---Loading
+|   |   |       Loading.jsx
+|   |   |       
+|   |   +---Themes
+|   |   |       Themes.jsx
+|   |   |       
+|   |   \---ThemeSinglePage
+|   |           ThemeSinglePage.jsx
+|   |           
+|   +---pages
+|   \---router
+|           index.js
+|           router.js
+|           
++---feature
+|   \---materials
+|       \---api
+|               getMaterialAPI.js
+|               
+\---styles
+        CodeDisplay.css
+        Error.css
+        ErrorPage.css
+        Header.css
+        HookForm.css
+        ItemsList.css
+        Loading.css
+        ThemeForm.css
+        ThemesContent.css
+        ThemeSinglePage.css
+        

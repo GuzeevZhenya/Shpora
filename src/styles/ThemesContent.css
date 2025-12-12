@@ -1,12 +1,12 @@
 * {
-  margin: 0; /* Убираем встроенные отступы */
-  padding: 0; /* Убираем встроенные отступы */
-  box-sizing: border-box; /* Устанавливаем модель коробки */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(27, 27, 32); /* Фон всего приложения */
-  color: white; /* Цвет текста */
+  background-color: rgb(27, 27, 32);
+  color: white;
 }
 
 .app-container {
@@ -14,52 +14,50 @@ body {
 }
 
 .header {
-  width: 100%; /* Ширина шапки на всю ширину */
-  margin-bottom: 20px; /* Отступ снизу для шапки */
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .themes-container {
   padding: 20px;
-  font-family: Arial, sans-serif; /* Шрифт для текста */
+  font-family: Arial, sans-serif;
 }
 
 h1 {
-  font-size: 28px; /* Размер заголовка */
-  color: #333; /* Цвет заголовка */
-  margin-bottom: 20px; /* Отступ снизу */
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .category-link {
-  display: inline-block; /* Выравнивание ссылок в строку */
-  margin: 5px 0; /* Отступы между ссылками */
-  padding: 10px 15px; /* Отступы внутри ссылки */
-  background-color: #007bff; /* Цвет фона ссылки */
-  color: white; /* Цвет текста ссылки */
-  text-decoration: none; /* Убираем подчеркивание */
-  border-radius: 5px; /* Закругленные углы */
-  transition: background-color 0.3s ease; /* Плавный переход цвета */
+  display: inline-block;
+  margin: 5px 0;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .category-link:hover {
-  background-color: #0056b3; /* Цвет фона при наведении */
+  background-color: #0056b3;
 }
 
 .category-link:active {
-  background-color: #004494; /* Цвет фона при нажатии */
+  background-color: #004494;
 }
 
 .content-container {
-  display: flex; /* Используем Flexbox для размещения элементов */
-  align-items: flex-start; /* Выравнивание по верхнему краю */
-  gap: 20px; /* Отступ между текстом и картинкой */
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
-
 .text-content {
-  flex: 1; /* Занимает оставшееся пространство */
+  flex: 1;
 }
-
 .map-image {
-  max-width: 50%; /* Ширина картинки */
-  height: auto; /* Автоматическая высота для сохранения пропорций */
-  border-radius: 10px; /* Закругленные углы */
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
 }

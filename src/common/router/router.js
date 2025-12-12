@@ -1,40 +1,40 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from 'react-router-dom';
 
-import { App } from "../App";
-import { Hook } from "../../Components/Hook/Hook";
-import { Cheatsheet } from "../../Components/Cheatsheet/Cheatsheet";
-import { Themes } from "../../Components/Themes/Themes";
-import { ThemeSinglePage } from "../../Components/ThemeSinglePage/ThemeSinglePage";
-import { ErrorPage } from "../../Components/404/ErrorPage";
-import { Navigate } from "react-router-dom";
+import { App } from '../../app/App';
+import { Hook } from '../components/Hook/Hook';
+import { Cheatsheet } from '../components/Cheatsheet/Cheatsheet';
+import { Themes } from '../components/Themes/Themes';
+import { Navigate } from 'react-router-dom';
+import { ThemeSinglePage } from '../components/ThemeSinglePage/ThemeSinglePage';
+import { ErrorPage } from '../components/Errors/ErrorPage';
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       {
-        path: "/hooks",
+        path: '/hooks',
         element: <Hook />,
       },
       {
-        path: "/cheatsheet",
+        path: '/cheatsheet',
         element: <Cheatsheet />,
       },
       {
-        path: "/",
+        path: '/',
         element: <Themes />,
       },
       {
-        path: "/themes/:id",
+        path: '/themes/:id',
         element: <ThemeSinglePage />,
       },
       {
-        path: "/Shpora",
+        path: '/Shpora',
         element: <Navigate to="/" />,
       },
       {
-        path: "*",
+        path: '*',
         element: <ErrorPage />,
       },
     ],

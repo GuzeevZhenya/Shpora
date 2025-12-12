@@ -1,76 +1,67 @@
-/* Общий стиль для страницы */
 .hook-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Стиль для заголовка */
-  .hook-page h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Стиль для списка хуков */
-  .hook-page ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  /* Стиль для каждого элемента списка */
-  .hook-page li {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Стиль для названия хука */
-  .hook-page h3 {
-    font-size: 1.5rem;
-    color: #2c3e50;
-    margin-bottom: 10px;
-  }
-  
-  /* Стиль для описания хука */
-  .hook-page p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  /* Стиль для блока с примером кода */
-  .code-display {
-    background-color: #2d2d2d; /* Темный фон для кода */
-    color: #ffffff; /* Белый текст */
-    padding: 15px;
-    border-radius: 6px;
-    overflow-x: auto; /* Горизонтальная прокрутка для длинного кода */
-    font-family: "Courier New", Courier, monospace;
-    font-size: 0.9rem;
-    white-space: pre-wrap; /* Перенос строк */
-  }
-  
-  /* Стиль для заголовка примера кода */
-  .code-display h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    color: #61dafb; /* Голубой цвет React */
-  }
-  
-  /* Стиль для ссылок */
-  .hook-page a {
-    color: #61dafb; /* Голубой цвет React */
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .hook-page a:hover {
-    text-decoration: underline;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.hook-page h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hook-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hook-page li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hook-page h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.hook-page p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.code-display {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+.code-display h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #61dafb;
+}
+
+.hook-page a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hook-page a:hover {
+  text-decoration: underline;
+}
